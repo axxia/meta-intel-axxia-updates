@@ -1,6 +1,21 @@
-################################################################################
-## README
-################################################################################
+meta-intel-axxia-updates
+========================
 
-This repository contains minimal changes to get older tags in
-meta-intel-axxia to build.
+OpenEmbedded/Yocto layer containing metadata with minimal changes
+to fix older Intel Axxia releases (meta-intel-axxia layer).
+
+Dependencies
+============
+
+This layer depends on meta-intel-bsp and meta-intel-distro layers
+and their dependencies.
+
+Usage
+=====
+
+For each older Intel Axxia release there is a branch with updates.
+Choose the proper relase branch and add this layer in conf/bblayers.conf
+from the Intel Axxia build.
+
+$ bitbake-layers add-layer -F <path-to-this-layer>
+
